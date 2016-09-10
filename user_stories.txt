@@ -1,0 +1,76 @@
+"visitor creates user account"
+as a visitor
+when i visit the homepage
+and I click sign up
+and I fill in a username and password
+and I click create account
+then I see a button to create my first idea
+
+"visitor logs into user account"
+as a logged out visitor
+when i visit the homepage
+and i click log in
+and i fill in my username and password
+and i click log in
+then i see all my ideas
+
+"user account creates idea"
+as a visitor logged into a user account
+when i visit my ideas page
+and click new idea
+and i add an idea name, description, category, and image
+and i click create idea
+then i see that idea and its attributes
+
+"user account deletes idea"
+as a visitor logged into a user account
+when i visit my ideas page
+and i click on an idea
+and i click on delete idea
+then i am back to my ideas page and the idea i deleted is gone
+
+"user account edits idea"
+as a visitor logged into a user account
+when i visit my ideas page
+and i click on an idea
+and i click on edit idea
+and i change the description of idea
+and i click on submit
+then i see that idea and with the updated description
+
+"admin account creates category"
+as a visitor logged into an admin account
+when i visit my admin dashboard
+and i click on create category
+and i fill in the category name
+and i click add category
+then i am back on my admin dashboard and the new category is listed
+
+"admin account destroys category"
+as a visitor logged into an admin account
+when i visit my admin dashboard
+and i click on delete category next to the category i want to delete
+then i am still on my dashboard with that category gone
+
+"admin account creates new image"
+as a visitor logged into an admin account
+when i visit my admin dashboard
+and i click on add image
+and i fill in an image url and name
+and i click on add image
+then i am back on my admin dashboard and the name of the new image is listed
+
+"user account cannot access admin dashboard"
+as a vistor logged into a user account
+when i visit the admin dashboard
+then i see an error, mush be an admin to view
+
+"user account cannot access new categories"
+as a vistor logged into a user account
+when i visit the new category
+then i see an error, mush be an admin to view
+
+"user account cannot access new images"
+as a vistor logged into a user account
+when i visit the new image
+then i see an error, mush be an admin to view
