@@ -4,5 +4,11 @@
 <%= f.text_field :name, placeholder: "Name" %>
 <%= f.label :description %>
 <%= f.text_field :description, placeholder: "Description" %>
+<%= f.label :category %>
+<%= f.select(:category) do %>
+<% @categories.each do |category| %>
+<%= content_tag(:option, category.name, value: category.name) %>
+<% end %>
+<% end %>
 <%= f.submit %>
 <% end %>
