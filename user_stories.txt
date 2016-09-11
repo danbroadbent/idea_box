@@ -14,6 +14,11 @@ and i fill in my username and password
 and i click log in
 then i see all my ideas
 
+"visitor logs out of user account"
+as a logged in visitor
+when i click logout
+then i am logged out
+
 "user account creates idea"
 as a visitor logged into a user account
 when i visit my ideas page
