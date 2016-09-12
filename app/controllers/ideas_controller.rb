@@ -4,6 +4,9 @@ class IdeasController < ApplicationController
     @ideas = Idea.all
   end
 
+  def show
+  end
+
   def new
     @idea = Idea.new
   end
@@ -14,6 +17,16 @@ class IdeasController < ApplicationController
       redirect_to ideas_path
     else
     end
+  end
+
+  def edit
+    @idea = Idea.find(params[:id])
+  end
+
+  def update
+  end
+
+  def destroy
   end
 
 private
